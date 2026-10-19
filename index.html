@@ -6,15 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>e-WorkPermit Record</title>
 <style>
-  
-
 <script>
-const params = new URLSearchParams(window.location.search);
-const recordId = params.get("id") || "DEMO-0001";
+window.addEventListener("DOMContentLoaded", function () {
+  const params = new URLSearchParams(window.location.search);
+  const recordId = params.get("id") || "DEMO-0001";
+  const values = document.querySelectorAll(".value");
 
-const values = document.querySelectorAll(".value");
-if (values.length >= 2) 
-  { values[1].textContent = recordId;}
+  if (values.length > 1) {
+    values[1].textContent = recordId;
+  }
+});
 </script>
 body {
   margin: 0;
