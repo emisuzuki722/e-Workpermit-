@@ -7,10 +7,14 @@
 <title>e-WorkPermit Record</title>
 <style>
   
+
 <script>
 const params = new URLSearchParams(window.location.search);
 const recordId = params.get("id") || "DEMO-0001";
-document.querySelectorAll(".value")[1].textContent = recordId;
+
+const values = document.querySelectorAll(".value");
+if (values.length >= 2) 
+  { values[1].textContent = recordId;}
 </script>
 body {
   margin: 0;
