@@ -1,95 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>e-WorkPermit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>e-WorkPermit Record</title>
 <style>
 body {
   margin: 0;
-  padding: 20px 12px;
-  background: #e8edf2;
   font-family: Arial, sans-serif;
+  background: #edf2f7;
+  color: #1e293b;
 }
-.paper {
-  max-width: 400px;
-  margin: auto;
+header {
+  background: #123b68;
+  color: white;
+  text-align: center;
+  padding: 24px 12px;
+}
+main {
+  max-width: 440px;
+  margin: 24px auto;
   padding: 22px;
   background: white;
-  border: 1px solid #bbb;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px #0001;
+}
+h2 { color: #123b68; }
+.field {
+  padding: 13px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+.label { color: #64748b; font-size: 13px; }
+.value { margin-top: 5px; font-weight: bold; }
+.status {
+  display: inline-block;
+  background: #fef3c7;
+  color: #92400e;
+  padding: 7px 12px;
+  border-radius: 20px;
+}
+.note {
+  margin-top: 20px;
+  padding: 12px;
+  background: #f1f5f9;
+  font-size: 13px;
   border-radius: 8px;
 }
-.warning {
-  padding: 10px;
+footer {
   text-align: center;
-  color: #8a3500;
-  background: #fff0d5;
-  border: 1px solid #e8bd75;
-  font-weight: bold;
+  color: #64748b;
   font-size: 12px;
+  padding: 20px;
 }
-h2 { text-align: center; font-size: 21px; }
-.profile { text-align: center; margin: 20px 0; }
-.person {
-  width: 100px;
-  height: 120px;
-  margin: auto;
-  background: #e8edf2;
-  border: 1px solid #aaa;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #555;
-}
-.head {
-  width: 35px;
-  height: 35px;
-  background: #9da8b3;
-  border-radius: 50%;
-}
-.bodyshape {
-  width: 65px;
-  height: 42px;
-  background: #9da8b3;
-  border-radius: 35px 35px 5px 5px;
-  margin-top: 5px;
-}
-.field {
-  padding: 12px 0;
-  border-bottom: 1px solid #ddd;
-}
-.label { font-size: 12px; color: #666; }
-.value { margin-top: 5px; font-size: 16px; font-weight: bold; }
-.footer { text-align: center; color: #666; font-size: 11px; margin-top: 18px; }
 </style>
 </head>
 <body>
-<div class="paper">
-  <div class="warning">SAMPLE  NOT AN OFFICIAL DOCUMENT</div>
-  <h2>e-WorkPermit</h2>
-  <div class="profile">
-    <div class="person">
-      <div class="head"></div>
-      <div class="bodyshape"></div>
-    </div>
-    <p>Sample Profile Photo</p>
+<header>
+  <h1>e-WorkPermit</h1>
+  <p>Digital Record System</p>
+</header>
+<main>
+  <h2>Personal Record</h2>
+  <div class="field">
+    <div class="label">Full Name</div>
+    <div class="value">Demo User</div>
   </div>
   <div class="field">
-    <div class="label">Document ID</div>
-    <div class="value">DEMO-001</div>
+    <div class="label">Record ID</div>
+    <div class="value">DEMO-0001</div>
+  </div>
+  <div class="field">
+    <div class="label">Document Type</div>
+    <div class="value">Work Permit Record</div>
   </div>
   <div class="field">
     <div class="label">Status</div>
-    <div class="value">Sample document</div>
+    <div class="value">
+      <span class="status">Demo  Not Verified</span>
+    </div>
   </div>
-  <div class="field">
-    <div class="label">Verification</div>
-    <div class="value">Demonstration only</div>
+  <div class="note">
+  This system official documents.
   </div>
-  <div class="footer">
-    This is a demo webpage, not an official permit.
-  </div>
-</div>
+</main>
+<footer>e-WorkPermit  Demo System</footer>
 </body>
 </html>
